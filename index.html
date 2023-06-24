@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Judul Halaman Web-->
+    <title>Memory Card Game</title>
+
+    <!-- Mengkoneksikan ke halaman CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+
+<!-- Memanggil Font di google untuk digunakan di web-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+<!-- Mengkoneksikan ke halaman javascript-->
+<script defer src="script.js"></script>
+
+
+</head>
+<body onload="on()">
+ 
+    <div class="head">
+        <!-- Judul Game dan Score-->
+        <h2>Memory Card Game</h2>
+        <div class="score">Score: <span>0</span></div>
+        <!-- Untuk overlay -->
+        <div id="overlay" onclick="off()" class="overlay-text visible">
+        <div id="text">Click To Start</div>
+    </div>
+    </div>
+
+    <div class="container" >
+        <div class="cell">
+            <!-- Menambah gambar depan dan belakang -->
+            <div class="front" data-index="1"><img src="css/img/1.png" alt=""></div>
+            <div class="back" data-index="1"><img src="css/img/13.png" alt=""></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="1"><img src="css/img/2.png" alt=""></div>
+            <div class="back" data-index="1"><img src="css/img/13.png" alt=""></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="2"><img src="css/img/3.png" alt=""></div>
+            <div class="back" data-index="1"><img src="css/img/13.png" alt=""></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="2"><img src="css/img/4.png" alt=""></div>
+            <div class="back" data-index="1"><img src="css/img/13.png" alt=""></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="3"><img src="css/img/5.png" alt=""></div>
+            <div class="back" data-index="1"><img src="css/img/13.png" alt=""></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="3"><img src="css/img/6.png" alt=""></div>
+            <div class="back" data-index="1"><img src="css/img/13.png" alt=""></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="4"><img src="css/img/7.png" alt=""></div>
+            <div class="back" data-index="1"><img src="css/img/13.png" alt=""></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="4"><img src="css/img/8.png" alt=""></div>
+            <div class="back" data-index="1"><img src="css/img/13.png" alt=""></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="5"><img src="css/img/9.png" alt=""></div>
+            <div class="back" data-index="1"><img src="css/img/13.png" alt=""></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="5"><img src="css/img/10.png" alt=""></div>
+            <div class="back" data-index="1"><img src="css/img/13.png" alt=""></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="6"><img src="css/img/11.png" alt=""></div>
+            <div class="back" data-index="1"><img src="css/img/13.png" alt=""></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="6"><img src="css/img/12.png" alt=""></div>
+            <div class="back" data-index="1"><img src="css/img/13.png" alt=""></div>
+        </div>
+    </div>
+
+<script>
+// Function untuk overlay
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+</body>
+</html>
